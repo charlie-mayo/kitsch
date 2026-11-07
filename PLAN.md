@@ -1,6 +1,6 @@
 # Kitsch Website (Electronic Press Kit): Plan
 
-Status: **Layout, colours, and fonts decided. Next: wireframe with placeholder content.** Open items are marked `[?]`; anything we're waiting on from the band is in **Reminders**.
+Status: **First full version built** (`index.html`, `css/styles.css`, `js/main.js`). Real logo and photos are in; bio, Spotify, TikTok, and YouTube links are placeholders marked `TODO` in `index.html`. Open items are marked `[?]`; anything we're waiting on from the band is in **Reminders**.
 
 ## Reminders (things Charlie owes me)
 
@@ -11,8 +11,9 @@ Status: **Layout, colours, and fonts decided. Next: wireframe with placeholder c
 - [ ] Bio text.
 - [ ] Spotify link (no profile yet; placeholder for now).
 - [ ] YouTube links for 3 to 5 live clips (none posted yet; placeholders for now).
-- [ ] About 5 band photos, plus the big hero photo.
-- [ ] Instagram and TikTok URLs.
+- [x] Band photos: 6 received (all landscape, 3:2) in `design-reference/band_shots/`. Hero is IMG_9555-3 (street at night); the other 5 are in the carousel. Web versions in `assets/images/`.
+- [x] Instagram: @kitsch.ca
+- [ ] TikTok handle (placeholder for now).
 - [ ] Decision on extras (section 3).
 
 ## 1. Purpose
@@ -30,13 +31,13 @@ An electronic press kit (EPK) for **Kitsch**, a funk band. The audience is booke
 | Logo | Band logo image, top of page | Waiting on file and format |
 | Hero photo | One big band photo directly under the logo | Waiting on photo |
 | Bio | Band bio | Waiting on text; placeholder for now |
-| Photos | About 5 band photos in a horizontal carousel | Waiting on photos; placeholders for now |
+| Photos | 5 landscape band photos in a horizontal carousel | Done |
 | Videos | 3 to 5 live clips, YouTube embeds | Placeholders until videos are posted |
-| Links | Spotify (link only, no embed), Instagram, TikTok | Spotify placeholder; others `[?]` |
+| Links | Spotify (link only, no embed), Instagram, TikTok | Instagram: https://www.instagram.com/kitsch.ca/ ; Spotify and TikTok placeholders |
+| Booking | Booking email: kkitschbandd@gmail.com | Decided |
 
 ## 3. Extras `[?]` (Charlie to decide later)
 
-- Contact / booking email
 - Band member names and roles
 - Press quotes
 - Upcoming shows
@@ -54,7 +55,8 @@ A **single compact scrolling page**. Structure is modeled on theglorioussons.com
 [ Bio ]
 [ Photos: horizontal carousel, big images, swipe/arrows ]
 [ Watch: 3 to 5 YouTube clips ]
-[ Footer: social links, contact if added ]
+[ Booking: email ]
+[ Footer: social links ]
 ```
 
 Notes:

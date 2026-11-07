@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kitsch | Funk Band | Electronic Press Kit</title>
+  <meta name="description" content="Kitsch is a funk band. Bio, photos, live videos, and booking contact.">
+
+  <!-- Social share preview. TODO: use absolute URLs once the site has a domain. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kitsch | Funk Band">
+  <meta property="og:description" content="Bio, photos, live videos, and booking contact.">
+  <meta property="og:image" content="assets/images/hero-1600.jpg">
+  <meta name="theme-color" content="#1F1F1F">
+  <link rel="icon" type="image/png" href="assets/logo/kitsch-logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ HERO: logo on top, big band photo underneath ============ -->
+  <header class="hero">
+    <h1 class="hero__logo">
+      <picture>
+        <source srcset="assets/logo/kitsch-logo.webp" type="image/webp">
+        <img src="assets/logo/kitsch-logo.png" alt="Kitsch" width="800" height="800">
+      </picture>
+    </h1>
+    <figure class="hero__photo ring">
+      <picture>
+        <source type="image/webp" srcset="assets/images/hero-800.webp 800w, assets/images/hero-1600.webp 1600w" sizes="(min-width: 1100px) 1068px, 100vw">
+        <img src="assets/images/hero-1600.jpg" srcset="assets/images/hero-800.jpg 800w, assets/images/hero-1600.jpg 1600w" sizes="(min-width: 1100px) 1068px, 100vw" alt="The five members of Kitsch standing in a street at night under orange streetlights" width="1600" height="1067" fetchpriority="high">
+      </picture>
+    </figure>
+  </header>
+
+  <div class="stripes" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- ============ LISTEN + SOCIALS ============ -->
+    <section class="section listen" aria-label="Listen and follow">
+      <!-- TODO: replace # with the Spotify artist link -->
+      <a class="btn btn--primary" href="#" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><g fill="none" stroke="var(--yellow)" stroke-linecap="round"><path d="M6.5 9.2c3.8-1.2 8-.9 11.2.9" stroke-width="2"/><path d="M7.2 12.4c3.1-.9 6.4-.6 9.1.8" stroke-width="1.7"/><path d="M7.8 15.4c2.4-.6 4.9-.4 7 .6" stroke-width="1.4"/></g></svg>
+        Listen on Spotify
+      </a>
+      <ul class="socials" aria-label="Social media">
+        <li>
+          <a class="social" href="https://www.instagram.com/kitsch.ca/" target="_blank" rel="noopener" aria-label="Instagram: @kitsch.ca">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/></g><circle cx="17.3" cy="6.7" r="1.3" fill="currentColor"/></svg>
+          </a>
+        </li>
+        <li>
+          <!-- TODO: replace # with the TikTok profile link -->
+          <a class="social" href="#" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.53.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ BIO ============ -->
+    <section class="section bio" id="bio" aria-labelledby="bio-title">
+      <h2 class="heading" id="bio-title">About</h2>
+      <!-- TODO: replace with the real bio -->
+      <div class="bio__text">
+        <p>Kitsch is a funk band. This is placeholder text for the bio: who the band is, where you're from, what the music sounds like, and what a crowd can expect from a live show.</p>
+        <p>A second short paragraph can cover highlights: releases, notable shows, festivals, or press.</p>
+      </div>
+    </section>
+
+    <!-- ============ PHOTOS: horizontal carousel ============ -->
+    <section class="section photos" id="photos" aria-labelledby="photos-title">
+      <div class="section__head">
+        <h2 class="heading" id="photos-title">Photos</h2>
+        <div class="carousel__controls">
+          <button class="arrow" type="button" data-dir="-1" aria-label="Previous photo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="arrow" type="button" data-dir="1" aria-label="Next photo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+      <ul class="carousel" tabindex="0" aria-label="Band photos, scroll sideways">
+        <li class="carousel__item ring">
+        <picture>
+          <source type="image/webp" srcset="assets/images/photo-1-800.webp 800w, assets/images/photo-1-1600.webp 1600w" sizes="(max-width: 640px) 88vw, 560px">
+          <img src="assets/images/photo-1-1600.jpg" srcset="assets/images/photo-1-800.jpg 800w, assets/images/photo-1-1600.jpg 1600w" sizes="(max-width: 640px) 88vw, 560px" alt="Kitsch posing against a brick wall" width="1600" height="1067" loading="lazy" decoding="async">
+        </picture>
+        </li>
+        <li class="carousel__item ring">
+        <picture>
+          <source type="image/webp" srcset="assets/images/photo-2-800.webp 800w, assets/images/photo-2-1600.webp 1600w" sizes="(max-width: 640px) 88vw, 560px">
+          <img src="assets/images/photo-2-1600.jpg" srcset="assets/images/photo-2-800.jpg 800w, assets/images/photo-2-1600.jpg 1600w" sizes="(max-width: 640px) 88vw, 560px" alt="Kitsch guitarist and bassist playing in a red lit rehearsal room" width="1600" height="1067" loading="lazy" decoding="async">
+        </picture>
+        </li>
+        <li class="carousel__item ring">
+        <picture>
+          <source type="image/webp" srcset="assets/images/photo-3-800.webp 800w, assets/images/photo-3-1600.webp 1600w" sizes="(max-width: 640px) 88vw, 560px">
+          <img src="assets/images/photo-3-1600.jpg" srcset="assets/images/photo-3-800.jpg 800w, assets/images/photo-3-1600.jpg 1600w" sizes="(max-width: 640px) 88vw, 560px" alt="Kitsch gathered around a car outside a house at night" width="1600" height="1067" loading="lazy" decoding="async">
+        </picture>
+        </li>
+        <li class="carousel__item ring">
+        <picture>
+          <source type="image/webp" srcset="assets/images/photo-4-800.webp 800w, assets/images/photo-4-1600.webp 1600w" sizes="(max-width: 640px) 88vw, 560px">
+          <img src="assets/images/photo-4-1600.jpg" srcset="assets/images/photo-4-800.jpg 800w, assets/images/photo-4-1600.jpg 1600w" sizes="(max-width: 640px) 88vw, 560px" alt="Kitsch jamming in a small room bathed in orange light" width="1600" height="1067" loading="lazy" decoding="async">
+        </picture>
+        </li>
+        <li class="carousel__item ring">
+        <picture>
+          <source type="image/webp" srcset="assets/images/photo-5-800.webp 800w, assets/images/photo-5-1600.webp 1600w" sizes="(max-width: 640px) 88vw, 560px">
+          <img src="assets/images/photo-5-1600.jpg" srcset="assets/images/photo-5-800.jpg 800w, assets/images/photo-5-1600.jpg 1600w" sizes="(max-width: 640px) 88vw, 560px" alt="Kitsch goofing around on a car at night, one member mid kick" width="1600" height="1067" loading="lazy" decoding="async">
+        </picture>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ VIDEOS ============ -->
+    <section class="section videos" id="videos" aria-labelledby="videos-title">
+      <h2 class="heading" id="videos-title">Watch</h2>
+      <!-- TODO: put each YouTube video ID in data-youtube-id (the part after "v=" in the link) and its title in data-title.
+           Empty IDs show a "coming soon" card. Add or remove <li> items for 3 to 5 videos. -->
+      <ul class="video-grid">
+        <li><button class="video ring" type="button" data-youtube-id="" data-title="Live clip 1"></button></li>
+        <li><button class="video ring" type="button" data-youtube-id="" data-title="Live clip 2"></button></li>
+        <li><button class="video ring" type="button" data-youtube-id="" data-title="Live clip 3"></button></li>
+        <li><button class="video ring" type="button" data-youtube-id="" data-title="Live clip 4"></button></li>
+      </ul>
+    </section>
+
+    <!-- ============ BOOKING ============ -->
+    <section class="section booking" id="booking" aria-labelledby="booking-title">
+      <h2 class="heading" id="booking-title">Booking</h2>
+      <p>For shows, press, and everything else:</p>
+      <a class="btn btn--primary btn--big" href="mailto:kkitschbandd@gmail.com">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="3"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></g></svg>
+        kkitschbandd@gmail.com
+      </a>
+    </section>
+
+  </main>
+
+  <div class="stripes" aria-hidden="true"></div>
+
+  <footer class="footer">
+    <ul class="footer__links">
+      <li><a href="#">Spotify</a></li><!-- TODO: Spotify link -->
+      <li><a href="https://www.instagram.com/kitsch.ca/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="#">TikTok</a></li><!-- TODO: TikTok link -->
+      <li><a href="mailto:kkitschbandd@gmail.com">Email</a></li>
+    </ul>
+    <p class="footer__small">&copy; <span id="year">2026</span> Kitsch</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

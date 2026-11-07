@@ -1,0 +1,265 @@
+/* ==========================================================
+   Kitsch EPK styles
+   Palette and fonts are defined in PLAN.md section 5.
+   ========================================================== */
+
+:root {
+  --bg: #1F1F1F;        /* dark grey page background (replaces the logo's black) */
+  --raised: #2B2B2B;    /* cards and surfaces */
+  --yellow: #F8D400;    /* logo yellow: headings, buttons, links */
+  --red: #F80000;       /* logo red: rings, borders, accents */
+  --text: #F5F1E6;      /* warm off white body text */
+  --muted: #BDB8AB;
+
+  --font-display: "Coiny", "Arial Rounded MT Bold", system-ui, sans-serif;
+  --font-body: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --radius: 22px;
+  --gutter: 16px;
+  --max: 1100px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+ul { list-style: none; margin: 0; padding: 0; }
+a { color: var(--yellow); }
+:focus-visible { outline: 3px solid var(--yellow); outline-offset: 3px; }
+
+/* ---------- Retro motifs ---------- */
+
+/* Red double ring, taken from the logo */
+.ring {
+  border: 4px solid var(--red);
+  outline: 4px solid var(--red);
+  outline-offset: 4px;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+/* Red and yellow 70s stripe band */
+.stripes {
+  height: 26px;
+  background:
+    linear-gradient(var(--red) 0 6px, transparent 6px 10px,
+                    var(--yellow) 10px 16px, transparent 16px 20px,
+                    var(--red) 20px 26px);
+}
+
+/* Section headings: Coiny in logo yellow with a hard red shadow */
+.heading {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2.6rem, 8vw, 4rem);
+  line-height: 1;
+  letter-spacing: 0.01em;
+  margin: 0 0 24px;
+  color: var(--yellow);
+  text-shadow: 4px 4px 0 var(--red);
+}
+
+/* Pill buttons with a hard, flat shadow */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 1.05rem;
+  text-decoration: none;
+  border: 3px solid var(--bg);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.btn--primary {
+  background: var(--yellow);
+  color: var(--bg);
+  box-shadow: 5px 5px 0 var(--red);
+}
+.btn--primary:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--red); }
+.btn--primary:active { transform: translate(3px, 3px); box-shadow: 2px 2px 0 var(--red); }
+.btn--big { font-size: clamp(1rem, 4.2vw, 1.3rem); padding: 14px 28px; }
+.btn .icon { width: 1.4em; height: 1.4em; flex: none; }
+
+/* ---------- Layout ---------- */
+
+.section {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 44px var(--gutter);
+}
+
+.section__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 28px var(--gutter) 48px;
+  text-align: center;
+}
+.hero__logo { margin: 0 auto 32px; width: clamp(180px, 34vw, 300px); }
+.hero__logo img { width: 100%; }
+.hero__photo { margin: 0; aspect-ratio: 16 / 9; max-height: 75vh; }
+.hero__photo picture { display: block; height: 100%; }
+.hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
+@media (max-width: 640px) {
+  .hero__photo { aspect-ratio: 4 / 3; }
+}
+
+/* ---------- Listen + socials ---------- */
+
+.listen {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px 28px;
+  padding-top: 40px;
+  padding-bottom: 8px;
+}
+.socials { display: flex; gap: 14px; }
+.social {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 3px solid var(--red);
+  color: var(--yellow);
+  transition: background .12s ease, color .12s ease;
+}
+.social:hover { background: var(--yellow); color: var(--bg); }
+.social .icon { width: 26px; height: 26px; }
+
+/* ---------- Bio ---------- */
+
+.bio__text { max-width: 68ch; }
+.bio__text p { margin: 0 0 1em; }
+
+/* ---------- Photo carousel ---------- */
+
+.carousel__controls { display: flex; gap: 10px; margin-bottom: 24px; }
+.arrow {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid var(--bg);
+  background: var(--yellow);
+  color: var(--bg);
+  box-shadow: 4px 4px 0 var(--red);
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+}
+.arrow svg { width: 24px; height: 24px; }
+.arrow:hover:not(:disabled) { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--red); }
+.arrow:disabled { opacity: .35; cursor: default; }
+
+.carousel {
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 12px;   /* snap photos inside the padding so the ring isn't clipped */
+  overscroll-behavior-x: contain;
+  padding: 12px;           /* room for the outer ring outline */
+  margin: -12px;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar { display: none; }
+.carousel:focus-visible { outline-offset: -2px; }
+.carousel__item {
+  flex: 0 0 auto;
+  width: clamp(300px, 52vw, 560px);   /* about 2 visible on desktop */
+  aspect-ratio: 3 / 2;                /* landscape photos */
+  scroll-snap-align: start;
+  background: var(--raised);
+}
+.carousel__item picture { display: block; height: 100%; }
+.carousel__item img { width: 100%; height: 100%; object-fit: cover; }
+@media (max-width: 640px) {
+  .carousel__item { width: 84vw; }    /* one big photo plus a peek of the next */
+  .carousel { gap: 22px; }
+}
+
+/* ---------- Videos ---------- */
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: 32px;
+}
+.video {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  padding: 0;
+  background: var(--raised) center / cover no-repeat;
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+.video:disabled { cursor: default; }
+.video__play {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: var(--yellow);
+  box-shadow: 4px 4px 0 var(--red);
+  display: grid;
+  place-items: center;
+  transition: transform .12s ease;
+}
+.video__play svg { width: 28px; height: 28px; margin-left: 4px; fill: var(--bg); }
+.video:hover:not(:disabled) .video__play { transform: scale(1.08); }
+.video__label {
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+  right: 12px;
+  text-align: left;
+  font-weight: 800;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .8);
+}
+.video--soon .video__play { background: var(--bg); box-shadow: none; border: 3px dashed var(--muted); }
+.video--soon .video__play svg { fill: var(--muted); }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* ---------- Booking ---------- */
+
+.booking { text-align: center; padding-bottom: 72px; }
+.booking p { margin: 0 0 22px; color: var(--muted); }
+
+/* ---------- Footer ---------- */
+
+.footer { text-align: center; padding: 32px var(--gutter) 40px; }
+.footer__links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 24px; }
+.footer__links a { color: var(--text); font-weight: 700; text-decoration: none; }
+.footer__links a:hover { color: var(--yellow); }
+.footer__small { margin: 16px 0 0; color: var(--muted); font-size: .9rem; }
