@@ -8,7 +8,7 @@ Status: **First full version built** (`index.html`, `css/styles.css`, `js/main.j
 - [x] ~~Color palette reference images~~: palette now comes from the logo (section 5).
 - [x] Heading font: Coiny.
 - [x] Body font: Nunito.
-- [x] Bio text (quote style, attributed to "J.C (Jesus Christ)").
+- [x] Bio text (quote style, attributed to "John Lennon").
 - [ ] Spotify link (no profile yet; placeholder for now).
 - [ ] YouTube links for 3 to 5 live clips (none posted yet; placeholders for now).
 - [x] Band photos: 6 received (all landscape, 3:2) in `design-reference/band_shots/`. Hero is IMG_9492 (the kick photo, outside a house at night); the other 5 are in the carousel, with IMG_9555-3 (street at night) last. Web versions in `assets/images/`.
