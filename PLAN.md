@@ -8,7 +8,7 @@ Status: **First full version built** (`index.html`, `css/styles.css`, `js/main.j
 - [x] ~~Color palette reference images~~: palette now comes from the logo (section 5).
 - [x] Heading font: Coiny.
 - [x] Body font: Nunito.
-- [ ] Bio text.
+- [x] Bio text (quote style, attributed to "J.C (Jesus Christ)").
 - [ ] Spotify link (no profile yet; placeholder for now).
 - [ ] YouTube links for 3 to 5 live clips (none posted yet; placeholders for now).
 - [x] Band photos: 6 received (all landscape, 3:2) in `design-reference/band_shots/`. Hero is IMG_9555-3 (street at night); the other 5 are in the carousel. Web versions in `assets/images/`.
@@ -30,7 +30,7 @@ An electronic press kit (EPK) for **Kitsch**, a funk band. The audience is booke
 | --- | --- | --- |
 | Logo | Band logo image, top of page | Waiting on file and format |
 | Hero photo | One big band photo directly under the logo | Waiting on photo |
-| Bio | Band bio | Waiting on text; placeholder for now |
+| Bio | Band bio as a pull quote | Done |
 | Photos | 5 landscape band photos in a horizontal carousel | Done |
 | Videos | 3 to 5 live clips, YouTube embeds | Placeholders until videos are posted |
 | Links | Spotify (link only, no embed), Instagram, TikTok | Instagram: https://www.instagram.com/kitsch.ca/ ; Spotify and TikTok placeholders |
