@@ -138,4 +138,11 @@ Each step ends with a commit and a browser review before moving on.
 
 ## 8. Hosting and deployment (later)
 
-To be decided after design. Likely candidates: GitHub Pages, Netlify, or Cloudflare Pages (all free for a static site), plus a custom domain `[?]`.
+**GitHub Pages (live).**
+
+- Live site: https://charlie-mayo.github.io/kitsch/
+- Repo: https://github.com/charlie-mayo/kitsch (public, required for free Pages)
+- Publishes from the `main` branch, repo root. Every push to `main` updates the live site in about a minute.
+- `.nojekyll` at the root makes Pages serve files as is.
+- Note: everything in the repo is publicly reachable, including `PLAN.md` and `design-reference/`.
+- Custom domain `[?]` (optional, about $15/year; hosting stays free).
