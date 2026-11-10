@@ -67,7 +67,7 @@ Notes:
 ### Photo carousel
 
 - **v1:** big images, one (or one and a peek of the next) visible at a time, scroll by swipe on phones and arrows on desktop.
-- **Later:** slow automatic scrolling like the Glorious Sons site, pausing on hover or touch, and respecting the "reduce motion" accessibility setting.
+- **Done:** loops endlessly in both directions, and slides to the next photo on its own every 4 seconds. Autoplay pauses on hover, focus, or while off screen; after a manual click, swipe, or scroll it waits 6 seconds before resuming. Off for visitors with "reduce motion" turned on. Timing is set by `AUTOPLAY_MS` and `RESUME_AFTER_MS` at the top of the carousel code in `js/main.js`.
 
 ## 5. Visual design
 
@@ -131,7 +131,7 @@ File structure:
 5. **Fill real content** as it arrives; optimize images.
 6. **Polish**: accessibility, performance, share preview checks.
 7. **Review round** with the band; iterate.
-8. **Later features**: auto scrolling carousel.
+8. **Later features**: auto scrolling carousel (done).
 9. **Deploy** (section 8).
 
 Each step ends with a commit and a browser review before moving on.

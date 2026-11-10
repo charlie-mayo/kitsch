@@ -188,6 +188,7 @@ a { color: var(--yellow); }
 .arrow:disabled { opacity: .35; cursor: default; }
 
 .carousel {
+  position: relative;      /* offsetLeft of photos is measured from the track */
   display: flex;
   gap: 28px;
   overflow-x: auto;
